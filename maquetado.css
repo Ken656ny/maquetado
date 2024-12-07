@@ -1,0 +1,187 @@
+*{
+    animation: aparicion1 1s forwards;
+}
+
+body{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    background: url(https://s3-alpha-sig.figma.com/img/62aa/a8a3/24a6555820952f664ea7d94571ef3fda?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=lyAe7kHWS7TdGBkHYOvCsyXl79DoFPuIErh~~dTDxvsLSlhA61eBVNp2IocBU8MuPWBlep74qfk8z-uX~0LLf9q-3rnYfznxc7quF1NJ6b~HgNRKgN3nfmHoFNvFOqlcGeFEr~8ZjdZGm9MD6z0gqXFqbeMagyQh58jOQdJC-U4eYMW2Ufw9PWfsAOwKBNhkl5QpYogUIRdiYSbRcy7fmdTj7-UVkflMwspIpCiR75Fy0ljzn--8fVeFirrcpMd1E2KfBcQ6YwAn25HgU7g-R-NeIdoV0dWEakqFBUZNqAJiqywEK0d5oLHqX8UZCw66BAeydaTKVEDFxHH049NWnA__);
+}
+@keyframes opacidad{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.formulario{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.4px solid black;
+    border-radius: 30px;
+    width: 515px;
+    height: 444px;
+    background-color: #60836A;
+    transition: transform 1s ease,box-shadow 1s ease;
+}
+@keyframes aparicion1{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.formulario:hover{
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    
+}
+.input{
+    padding: 5px;
+    width: 327px;
+    height: 42px;
+    border-radius: 50px;
+    border: none;
+    border: 1.5px solid black;
+    transition: transform 1s ease,box-shadow 1s ease;
+}
+.input:hover{
+    box-shadow: 0 0 10px #60836A;
+    transform: scale(1.05);
+}
+.imagen{
+    margin-left: 115px;
+    border: 1px solid black;
+    border-radius: 100px;
+    transition: transform 1s ease, box-shadow 1s ease;
+}
+.imagen:hover{
+    animation: animacion 5s infinite;
+    box-shadow: 0 0 10px black;
+    transform: scale(1.05);
+}
+@keyframes animacion{
+    0%{
+        box-shadow: 0 0 100px black;
+    }
+    25%{
+        box-shadow: 0 0 100px rgb(0, 229, 255);
+    }
+    50%{
+        box-shadow:0 0 100px rgb(157, 0, 255);
+    }
+    100%{
+        box-shadow:0 0 100px rgb(255, 0, 0);
+    }
+}
+.boton{
+    margin-left: 125px;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 50px;
+    border: none;
+    border: 1px solid black;
+    color: white;
+    background-color: #83997F;
+    margin-top: 10px;
+    transition: transform 1s ease,box-shadow 1s ease,background-color 1s ease ;
+}
+.boton:hover{
+    box-shadow: 0 0 10px #215718;
+    transform: scale(1.05);
+    background-color: #215718;
+}
+
+p{
+    letter-spacing: -1px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Jockey One', sans-serif;
+    transition: transform 1s ease;
+}
+p:hover{
+    transform: scale(1.03);
+}
+.imagen2{
+    position: absolute;
+    bottom: 8px;
+    border-radius: 30px;
+    border: 2px solid black;
+    transition: transform 1s ease, box-shadow 2s ease;
+}
+.imagen2:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 100px rgb(0, 0, 0);
+}
+
+.registrar{
+    position: absolute;
+    text-decoration: none;
+    bottom: 10px;
+    left: 10px;
+    letter-spacing: -1px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Jockey One', sans-serif;
+    transition:text-decoration 5s ease, color 1s ease,transform 1s ease;
+}
+.registrar:hover{
+    color: #215718;
+    text-decoration: underline;
+    transform: scale(1.05);
+}
+h5{
+    margin: 0;
+    position: absolute;
+    bottom: 0px;
+    left: 1px;
+    letter-spacing: -1px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-family: 'Jockey One', sans-serif;
+    transition: transform 1s ease;
+    animation: nombre 10s infinite;
+}
+
+@keyframes nombre{
+    0%{
+        color: #215718;
+    }
+    20%{
+        color: blue;
+    }
+    40%{
+        color: cadetblue;
+    }
+    60%{
+        color: blueviolet;
+    }
+    80%{
+        color: rgb(55, 255, 0);
+    }
+    100%{
+        color: rgb(255, 0, 0);
+    }
+}
+h5:hover{
+    transform: scale(1.05);
+}
+.sena{
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+}
+.sena:hover{
+    transform: scale(1.05);
+}
